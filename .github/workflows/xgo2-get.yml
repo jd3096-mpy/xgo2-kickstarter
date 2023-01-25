@@ -21,4 +21,11 @@ jobs:
         run: pip install webdriver-manager
       - name: 'get data'
         run: python3 getdata.py
+      - name: Upload to this repo
+        run: |
+          git config --global user.name "jd3096-bot" 
+          git config --global user.email "1091329318@qq.com" 
+          git add .
+          git commit -m 'upload"
+          git push -u
 
