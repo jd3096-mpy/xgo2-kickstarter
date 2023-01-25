@@ -26,9 +26,9 @@ jobs:
           git config --global user.name "jd3096-mpy" 
           git config --global user.email "1091329318@qq.com" 
           git add .
-          git commit -m "upload"
+          git commit -m "upload" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{secrets.MY_PSD}}
-          branch: ${{github.ref}}
+          github_token: ${{secrets.GITHUB_TOKEN}}
+
