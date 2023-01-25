@@ -22,5 +22,13 @@ people=nums[0]
 print(people)
 with open('result.txt','w') as f:
     f.write(people)
+
+import requests
+import json
+headers={"api-key":"VqL9j56HfXisdr8nOvGT=iLl95g="}
+url='http://api.heclouds.com/devices/1039865113/datapoints'
+payload = {'datastreams': [{"id": "people", "datapoints": [{"value": int(people)}]}]}
+payload=json.dumps(payload)
+ok=requests.post(headers=headers,url=url,data=payload)
 driver.close()
 
