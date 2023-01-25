@@ -3,7 +3,7 @@ name: 'xgo2-get Bot'
 on:
   push:
     branches: 
-      - master
+      - main
   schedule:
     - cron: '6 * * * *'
 
