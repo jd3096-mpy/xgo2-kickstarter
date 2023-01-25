@@ -30,4 +30,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.BRIDGE}}
+          github_token: ${{secrets.MY_PSD}}
+          branch: ${{github.ref}}
