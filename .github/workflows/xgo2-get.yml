@@ -10,7 +10,7 @@ on:
     branches: 
       - main
   schedule:
-    - cron: '6 * * * *'
+    - cron: '6 1,13 * * *'
 
 jobs:
   xgo2-get:
