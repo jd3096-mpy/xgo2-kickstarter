@@ -30,5 +30,6 @@ url='http://api.heclouds.com/devices/1039865113/datapoints'
 payload = {'datastreams': [{"id": "people", "datapoints": [{"value": int(people)}]}]}
 payload=json.dumps(payload)
 ok=requests.post(headers=headers,url=url,data=payload)
+print(ok)
 driver.close()
 
