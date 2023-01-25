@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-python@v1
       - name: 'Install selenium'
         run: pip install selenium==4.8.0
+      - name: 'Install helper'
+        run: pip install webdriver-manager
       - name: 'get data'
-        run: python getdata.py
+        run: python3 getdata.py
 
