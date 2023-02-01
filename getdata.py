@@ -46,7 +46,7 @@ payload=json.dumps(payload)
 ok=requests.post(headers=headers,url=url,data=payload)
 print(ok.text)
 
-payload = {'datastreams': [{"id": "moneys", "datapoints": [{"value": int(people)}]}]}
+payload = {'datastreams': [{"id": "moneys", "datapoints": [{"value": money}]}]}
 payload=json.dumps(payload)
 ok=requests.post(headers=headers,url=url,data=payload)
 print(ok.text)
